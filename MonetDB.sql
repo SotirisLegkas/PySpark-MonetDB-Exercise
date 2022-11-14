@@ -1,9 +1,3 @@
---Large Scale Data Management
---Assignment
---Name: Legkas Sotiris
---Student ID: f3352112
-
-
 create or replace LOADER myloader(filename string) LANGUAGE PYTHON {
 import pandas as pd
 willow = pd.read_csv(filename,sep=',').to_dict('list')
